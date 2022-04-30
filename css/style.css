@@ -1,0 +1,165 @@
+/* RESET AND UTILITIES  */
+
+* {
+  margin : 0 ; 
+  padding : 0 ; 
+  box-sizing : border-box ; 
+  font-family: 'Outfit', sans-serif;
+}
+
+
+.mb1r{
+    margin-bottom: 1rem;
+}
+
+.pdr03 {
+    padding-right: 0.3rem;
+}
+
+/* ---------------------------------------------  */
+
+/* CARD STRUCTURE */
+
+body {
+    background: hsl(216, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    max-width: 1440px;
+
+}
+
+
+.card {
+    width: 400px;
+    background: hsl(216, 50%, 16%);
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 1.6rem;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 35px 10px rgba(0,0,0,0.75);
+  
+}
+
+.card-img img {
+    max-width: 100%;
+    border-radius: 10px;
+ 
+}
+
+.card-img {
+    position: relative;
+}
+
+.card-img:hover .view {
+    display: block;
+
+}
+
+
+.card-img:hover .color {
+    cursor: pointer;
+    background: rgba(0, 255, 247 , 0.6);
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+.view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+    
+}
+
+
+
+/* ---------------------------------------------  */
+
+/* CARD TEXT  */
+
+.container .card h1 {
+    color : hsl(0, 0%, 100%);
+    font-size: 26px;
+}
+
+.container .card h1:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+p {
+    color: hsl(0, 0%, 100%);
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+
+/* ---------------------------------------------  */
+
+/* CARD INFO   */
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 1.2rem;
+}
+
+
+
+.info img {
+    vertical-align: middle;
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+}
+
+.clock {
+    color: hsl(215, 51%, 70%);
+}
+
+
+/* ---------------------------------------------  */
+
+/* CARD AUTHOR  */
+
+.card-author {
+    color: rgba(255,255,255,0.6);
+}
+
+.card-author img {
+    border-radius: 50%;
+    width: 40px;
+    border: 1px solid #fff;
+    vertical-align: middle;
+    margin-right: 0.7rem;
+     
+}
+
+.card-author span {
+    color: #fff;
+    opacity: 1;
+    margin-left: 0.5rem;
+}
+
+
+.card-author span:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+/* ---------------------------------------------  */
